@@ -1,0 +1,111 @@
+html, body{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,PingFang SC,Noto Sans,Noto Sans CJK SC,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,sans-serif;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+	background: #EDF3F6;
+	box-sizing: border-box;
+}
+a:hover{
+	color: rgba(47,50,57,0.9) !important;
+	text-decoration: none;
+}
+.wrap{
+	min-height: 100%;
+}
+/** 公用侧边栏部分 **/
+.wrap aside{
+	position: fixed;
+	background: rgba(47,50,57,0.9);
+	width: 270px;
+	height: 100%;
+}
+.wrap aside .aside-container{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrap aside .aside-container .profile{
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	background: url('/images/profile.jpg') no-repeat 50%;
+	background-size: cover;
+}
+.wrap aside .aside-container .name{
+	font-size: 1.2rem;
+	color: #fff;
+	margin-top: 20px;
+}
+
+/** 正文内容部分 **/
+.wrap .mid-col{
+	position: absolute;
+	left: 0;
+	right: 0;
+	min-height: 100%;
+	margin-left: 270px;
+}
+.wrap .mid-col .mid-col-container{
+	padding: 0 50px;
+}
+
+/** 文章列表 **/
+.wrap .mid-col .mid-col-container article{
+	padding: 30px 0;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+}
+.wrap .mid-col .mid-col-container article .entry-content{
+	line-height: 1.8;
+	font-size: 16px;
+	font-weight: 400;
+	word-wrap: break-word;
+	text-align:justify;
+}
+.wrap .mid-col .mid-col-container article p{
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+.wrap .mid-col .mid-col-container article p a{
+	color: #076dd0;
+}
+
+
+/** 文章详细内容 **/
+.wrap .mid-col .mid-col-container .post-detail{
+	padding: 30px 0;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+}
+.wrap .mid-col .mid-col-container .post-detail .content{
+	font-size: 16px;
+	line-height: 1.8;
+}
+
+/** 正文公用css **/
+.wrap .mid-col .mid-col-container .meta{
+	position: absolute;
+	right: 0;
+	font-size: 14px;
+	line-height: 30px;
+}
+.wrap .mid-col .mid-col-container h1.title{
+	font-weight: 400;
+	font-size: 28px;
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
+footer{
+	text-align: center;
+	padding: 20px 0;
+}
+footer p{
+	line-height: 20px;
+}
+
+

@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<style type="text/css" src="css/style.css"></style>
-</head>
-<body>
-	<div>tracy</div>
-</body>
-</html>
+---
+layout: page
+---
+{% for post in site.posts %}
+<article>
+    <div class="meta">{{post.date | date_to_string}}</div>
+    <h1 class="title">{{post.title}}</h1>
+    <div class="entry-content">
+        <p>{{ post.excerpt }}</p>
+        <p><a href="{{ site.baseurl }}{{ post.url }}">继续阅读 »</a></p>
+    </div>
+</article>
+{% endfor %}
