@@ -3,7 +3,7 @@ html, body{
 	font-size: 14px;
 	-webkit-font-smoothing: antialiased;
 	height: 100%;
-	background: #EDF3F6;
+	background: #FFFFFF;
 	box-sizing: border-box;
 }
 a:hover{
@@ -22,23 +22,38 @@ a:hover{
 }
 .wrap aside .aside-container{
 	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	position: relative;
 }
-
 .wrap aside .aside-container .profile{
+	position: absolute;
+	top: 45%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+}
+.wrap aside .aside-container .profile .avatar{
+	width: 100%;
+	
+}
+.wrap aside .aside-container .profile .avatar img{
 	width: 160px;
 	height: 160px;
 	border-radius: 50%;
-	background: url('/images/profile.jpg') no-repeat 50%;
-	background-size: cover;
 }
-.wrap aside .aside-container .name{
-	font-size: 1.2rem;
+.wrap aside .aside-container .profile .name{
 	color: #fff;
 	margin-top: 20px;
+}
+.wrap aside .aside-container footer{
+	position: absolute;
+	bottom: 15px;
+	text-align: center;
+	width: 100%;
+}
+.wrap aside .aside-container footer p{
+	line-height: 20px;
+	color: #ffffff;
+	font-weight: 600;
 }
 
 /** 正文内容部分 **/
@@ -50,40 +65,38 @@ a:hover{
 	margin-left: 270px;
 }
 .wrap .mid-col .mid-col-container{
-	padding: 0 50px;
+	padding: 20px 50px;
 }
 
 /** 文章列表 **/
 .wrap .mid-col .mid-col-container article{
-	padding: 30px 0;
-	border-bottom: 1px solid #ddd;
+	padding: 15px 0;
+	border-bottom: 1px dashed #ddd;
 	position: relative;
 }
-.wrap .mid-col .mid-col-container article .entry-content{
-	line-height: 1.8;
-	font-size: 16px;
+.wrap .mid-col .mid-col-container article h1{
 	font-weight: 400;
-	word-wrap: break-word;
-	text-align:justify;
-}
-.wrap .mid-col .mid-col-container article p{
-	margin-top: 15px;
+	font-size: 18px;
+	margin-top: 0;
 	margin-bottom: 0;
-}
-.wrap .mid-col .mid-col-container article p a{
-	color: #076dd0;
 }
 
 
 /** 文章详细内容 **/
 .wrap .mid-col .mid-col-container .post-detail{
-	padding: 30px 0;
-	border-bottom: 1px solid #ddd;
 	position: relative;
 }
 .wrap .mid-col .mid-col-container .post-detail .content{
 	font-size: 16px;
 	line-height: 1.8;
+}
+.wrap .mid-col .mid-col-container .post-detail h1{
+	font-weight: 600;
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
 }
 
 /** 正文公用css **/
@@ -93,19 +106,8 @@ a:hover{
 	font-size: 14px;
 	line-height: 30px;
 }
-.wrap .mid-col .mid-col-container h1.title{
-	font-weight: 400;
-	font-size: 28px;
-	margin-top: 0;
-	margin-bottom: 25px;
-}
 
-footer{
-	text-align: center;
-	padding: 20px 0;
-}
-footer p{
-	line-height: 20px;
-}
+
+
 
 

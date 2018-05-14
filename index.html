@@ -4,10 +4,6 @@ layout: page
 {% for post in site.posts %}
 <article>
     <div class="meta">{{post.date | date_to_string}}</div>
-    <h1 class="title">{{post.title}}</h1>
-    <div class="entry-content">
-        <p>{{ post.excerpt }}</p>
-        <p><a href="{{ site.baseurl }}{{ post.url }}">继续阅读 »</a></p>
-    </div>
+    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h1>
 </article>
 {% endfor %}
