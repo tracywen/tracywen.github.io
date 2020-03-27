@@ -6,11 +6,11 @@ categories: DevExtreme
 ---
 <!-- more -->
 
-##主要是使用过程中一些需要注意的地方:
+主要是使用过程中一些需要注意的地方:
 
 1.  控件的dataSource依赖于API的response.
 
-    $\color{red}错误写法$：
+    错误写法：
     假如每次API返回的内容不一样，UI上的dropdown内容不会自动更新：
     ```javascript
     apiService.getDropdownList().then(function (r) {
@@ -66,7 +66,7 @@ categories: DevExtreme
 ---
 2.  Datagrid 的Custom template中，不要写三目运算符，否则grid底部会出现大片空白.
 
-    $\color{red}错误写法$：
+    错误写法：
     ```html
     <div id="gridContainer" dx-data-grid="dataGridOptions" dx-item-alias="item" class="custom-datagrid">
         <div data-options="dxTemplate:{ name:'actionCellTemplate' }">
@@ -76,5 +76,3 @@ categories: DevExtreme
         </div>
     </div>
     ```
----
-3. 
